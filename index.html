@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sijie Ren 任思杰 — Historian of Science, Technology and Medicine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EDF0F1;
+    --card:#FFFFFF;
+    --ink:#1F2D3B;
+    --ink-soft:#51616F;
+    --seal:#A23B2E;
+    --line:#C7CDD1;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', 'Noto Serif SC', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--seal); text-decoration:none; border-bottom:1px solid rgba(162,59,46,0.35);}
+  a:hover{border-bottom-color:var(--seal);}
+
+  .wrap{max-width:760px; margin:0 auto; padding:0 28px;}
+
+  /* header */
+  header{padding:64px 0 48px; border-bottom:1px solid var(--line);}
+  .header-row{display:flex; justify-content:space-between; align-items:flex-start; gap:24px;}
+  .seal{
+    flex:0 0 auto;
+    width:52px; height:52px;
+    background:var(--seal);
+    color:#F4EDE9;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Noto Serif SC', serif;
+    font-size:26px;
+    font-weight:600;
+    border-radius:2px;
+    transform:rotate(-1.5deg);
+  }
+  h1{
+    font-family:'Source Serif 4', serif;
+    font-weight:500;
+    font-size:2.5rem;
+    margin:0 0 4px;
+    letter-spacing:-0.01em;
+  }
+  .zh-name{font-family:'Noto Serif SC', serif; font-size:1.3rem; color:var(--ink-soft); font-weight:400;}
+  .role{margin-top:14px; color:var(--ink-soft); font-size:1.02rem; max-width:46ch;}
+  nav{margin-top:28px; display:flex; gap:22px; flex-wrap:wrap; font-size:0.92rem;}
+  nav a{color:var(--ink-soft); border-bottom:1px solid transparent;}
+  nav a:hover{color:var(--seal); border-bottom-color:var(--seal);}
+
+  section{padding:46px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-family:'Source Serif 4', serif;
+    font-weight:500;
+    font-size:1.35rem;
+    margin:0 0 20px;
+  }
+  p{margin:0 0 14px; color:var(--ink);}
+  .lede{font-size:1.05rem; max-width:56ch;}
+
+  .entry{
+    display:grid;
+    grid-template-columns:96px 1fr;
+    gap:18px;
+    padding:16px 0;
+    border-top:1px solid var(--line);
+  }
+  .entry:first-of-type{border-top:none;}
+  .entry .tag{
+    font-size:0.82rem;
+    color:var(--ink-soft);
+    padding-top:2px;
+  }
+  .entry .title{font-weight:600; margin:0 0 4px;}
+  .entry .meta{font-size:0.9rem; color:var(--ink-soft); margin:0;}
+
+  .book{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:3px solid var(--seal);
+    padding:22px 24px;
+    margin-bottom:8px;
+  }
+  .book .title{font-family:'Source Serif 4', serif; font-size:1.15rem; font-weight:500; margin:0 0 6px;}
+  .book .meta{font-size:0.9rem; color:var(--ink-soft); margin:0;}
+
+  ul.lineage{list-style:none; margin:0; padding:0; font-size:0.95rem; color:var(--ink-soft);}
+  ul.lineage li{padding:4px 0;}
+  ul.lineage li b{color:var(--ink); font-weight:600;}
+
+  footer{padding:36px 0 60px; font-size:0.88rem; color:var(--ink-soft);}
+  footer a{color:var(--ink-soft); border-bottom:1px solid var(--line);}
+
+  @media (max-width:560px){
+    h1{font-size:2rem;}
+    .entry{grid-template-columns:1fr; gap:4px;}
+    header{padding:44px 0 32px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="header-row">
+      <div>
+        <h1>Sijie Ren</h1>
+        <div class="zh-name">任思杰</div>
+        <p class="role">Boya Postdoctoral Fellow, Department of History of Science, Technology and Medicine, Peking University. I work on the history of science, politics, and medicine in twentieth-century China.</p>
+      </div>
+      <div class="seal">任</div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#book">Book</a>
+      <a href="#publications">Publications</a>
+      <a href="#lineage">Training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lede">I am a historian of science, technology, and medicine in modern China, with a particular interest in how scientific work becomes entangled with political legitimacy, mass mobilization, and everyday moral life under socialism. My research moves between the laboratory bench, the archive, and the self-criticism session — reading scientific practice as a form of political and social history.</p>
+    <p>I completed my PhD at the University of Bristol under the supervision of Robert Bickers, with Rana Mitter serving as external examiner. I am currently based at Peking University, supervised by Zhang Li (张藜) as part of the Boya Postdoctoral Fellowship.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="entry">
+      <div class="tag">Dissertation</div>
+      <div>
+        <p class="title">China's Synthetic Insulin Project, 1958–1965</p>
+        <p class="meta">A history of the world's first total synthesis of a protein, read as a case study in scientific mobilization, international competition, and the politics of credit in the early PRC. Winner of the 2025 BACS Best Doctoral Thesis Prize.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">In progress</div>
+      <div>
+        <p class="title">The Moral Economy of Toil (辛劳的道德经济)</p>
+        <p class="meta">A new project tracing "辛苦" (toil, hardship) as a form of moral currency across commendation reports, self-criticism documents, and model-worker narratives in PRC political discourse.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">Working paper</div>
+      <div>
+        <p class="title">Self-Criticism Documents as Sources for Cold War Knowledge Transfer</p>
+        <p class="meta">Centered on the marine biologists Zeng Chengkui (C. K. Tseng) and Zhang Xi at the CAS Institute of Oceanology.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <h2>Book</h2>
+    <div class="book">
+      <p class="title">China's Synthetic Insulin Project (working title)</p>
+      <p class="meta">Monograph under contract, Cambridge University Press. Based on the doctoral dissertation, winner of the 2025 BACS Best Doctoral Thesis Prize.</p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <div class="entry">
+      <div class="tag">Article</div>
+      <div>
+        <p class="title">The Afterlife of a Protein</p>
+        <p class="meta">East Asian Science, Technology and Society (EASTS). On technoscientific achievements as unusually durable carriers of political meaning, extending the concept of boundary objects diachronically.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">Article</div>
+      <div>
+        <p class="title">Grand Corps Combat: Scientific Mobilization in China's Synthetic Insulin Project</p>
+        <p class="meta">On the 1960 mass-mobilization campaign ("大兵团作战") in the synthetic insulin project. Drawn from the dissertation.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">Article</div>
+      <div>
+        <p class="title">"The Humble Are the Most Intelligent"</p>
+        <p class="meta">On the governance of scientific associations in the PRC. A parallel Chinese-language version is prepared for 《当代中国史研究》.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">中文文章</div>
+      <div>
+        <p class="title">重探中国人工合成胰岛素项目的源起</p>
+        <p class="meta">《当代中国史研究》。 English-language development of this material is planned for <em>History and Technology</em>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lineage">
+    <h2>Training</h2>
+    <p>PhD, University of Bristol. Supervisor: Robert Bickers; external examiner: Rana Mitter.</p>
+    <ul class="lineage">
+      <li><b>Robert Bickers</b> — SOAS PhD, 1992</li>
+      <li><b>T. H. Barrett</b></li>
+      <li><b>Stanley Weinstein</b></li>
+      <li><b>Masatoshi Nāgatomi</b></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Department of History of Science, Technology and Medicine<br>Peking University, Beijing, China</p>
+    <p>Replace this line with your PKU email address and, if you'd like, links to your CV (PDF), Google Scholar, ORCID, or Academia.edu profile.</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Sijie Ren 任思杰. Built as a simple static page — no framework required.
+  </footer>
+</div>
+
+</body>
+</html>
