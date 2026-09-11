@@ -31,7 +31,6 @@
 
   .wrap{max-width:760px; margin:0 auto; padding:0 28px;}
 
-  /* header */
   header{padding:64px 0 48px; border-bottom:1px solid var(--line);}
   .header-row{display:flex; justify-content:space-between; align-items:flex-start; gap:24px;}
   .seal{
@@ -54,37 +53,43 @@
     letter-spacing:-0.01em;
   }
   .zh-name{font-family:'Noto Serif SC', serif; font-size:1.3rem; color:var(--ink-soft); font-weight:400;}
-  .role{margin-top:14px; color:var(--ink-soft); font-size:1.02rem; max-width:46ch;}
-  nav{margin-top:28px; display:flex; gap:22px; flex-wrap:wrap; font-size:0.92rem;}
+  .role{margin-top:14px; color:var(--ink-soft); font-size:1.02rem; max-width:50ch;}
+  .role span{display:block; margin-top:3px;}
+  nav{margin-top:28px; display:flex; gap:20px; flex-wrap:wrap; font-size:0.9rem;}
   nav a{color:var(--ink-soft); border-bottom:1px solid transparent;}
   nav a:hover{color:var(--seal); border-bottom-color:var(--seal);}
 
-  section{padding:46px 0; border-bottom:1px solid var(--line);}
+  section{padding:44px 0; border-bottom:1px solid var(--line);}
   section:last-of-type{border-bottom:none;}
   h2{
     font-family:'Source Serif 4', serif;
     font-weight:500;
-    font-size:1.35rem;
+    font-size:1.3rem;
     margin:0 0 20px;
   }
   p{margin:0 0 14px; color:var(--ink);}
-  .lede{font-size:1.05rem; max-width:56ch;}
+  .lede{font-size:1.02rem; max-width:58ch;}
 
   .entry{
     display:grid;
-    grid-template-columns:96px 1fr;
+    grid-template-columns:112px 1fr;
     gap:18px;
-    padding:16px 0;
+    padding:15px 0;
     border-top:1px solid var(--line);
   }
   .entry:first-of-type{border-top:none;}
-  .entry .tag{
-    font-size:0.82rem;
-    color:var(--ink-soft);
-    padding-top:2px;
-  }
+  .entry .tag{font-size:0.8rem; color:var(--ink-soft); padding-top:2px;}
   .entry .title{font-weight:600; margin:0 0 4px;}
-  .entry .meta{font-size:0.9rem; color:var(--ink-soft); margin:0;}
+  .entry .meta{font-size:0.88rem; color:var(--ink-soft); margin:0;}
+  .entry .status{
+    display:inline-block;
+    font-size:0.74rem;
+    color:var(--seal);
+    border:1px solid rgba(162,59,46,0.4);
+    padding:1px 7px;
+    border-radius:2px;
+    margin-top:6px;
+  }
 
   .book{
     background:var(--card);
@@ -93,19 +98,21 @@
     padding:22px 24px;
     margin-bottom:8px;
   }
-  .book .title{font-family:'Source Serif 4', serif; font-size:1.15rem; font-weight:500; margin:0 0 6px;}
-  .book .meta{font-size:0.9rem; color:var(--ink-soft); margin:0;}
+  .book .title{font-family:'Source Serif 4', serif; font-size:1.12rem; font-weight:500; margin:0 0 6px;}
+  .book .meta{font-size:0.9rem; color:var(--ink-soft); margin:0 0 8px;}
 
-  ul.lineage{list-style:none; margin:0; padding:0; font-size:0.95rem; color:var(--ink-soft);}
-  ul.lineage li{padding:4px 0;}
-  ul.lineage li b{color:var(--ink); font-weight:600;}
+  .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+  ul.plain{list-style:none; margin:0; padding:0; font-size:0.92rem;}
+  ul.plain li{padding:6px 0; border-top:1px solid var(--line); color:var(--ink-soft);}
+  ul.plain li:first-child{border-top:none;}
+  ul.plain li b{color:var(--ink); font-weight:600;}
 
-  footer{padding:36px 0 60px; font-size:0.88rem; color:var(--ink-soft);}
-  footer a{color:var(--ink-soft); border-bottom:1px solid var(--line);}
+  footer{padding:36px 0 60px; font-size:0.86rem; color:var(--ink-soft);}
 
   @media (max-width:560px){
     h1{font-size:2rem;}
     .entry{grid-template-columns:1fr; gap:4px;}
+    .grid-2{grid-template-columns:1fr;}
     header{padding:44px 0 32px;}
   }
 </style>
@@ -118,47 +125,49 @@
       <div>
         <h1>Sijie Ren</h1>
         <div class="zh-name">任思杰</div>
-        <p class="role">Boya Postdoctoral Fellow, Department of History of Science, Technology and Medicine, Peking University. I work on the history of science, politics, and medicine in twentieth-century China.</p>
+        <p class="role">Boya Postdoctoral Fellow, Department of History of Science, Technology and Medicine, Peking University
+        <span>Honorary Research Associate, School of Humanities, University of Bristol</span></p>
       </div>
       <div class="seal">任</div>
     </div>
     <nav>
       <a href="#about">About</a>
-      <a href="#research">Research</a>
+      <a href="#education">Education</a>
       <a href="#book">Book</a>
       <a href="#publications">Publications</a>
-      <a href="#lineage">Training</a>
+      <a href="#talks">Talks</a>
+      <a href="#awards">Awards</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About</h2>
-    <p class="lede">I am a historian of science, technology, and medicine in modern China, with a particular interest in how scientific work becomes entangled with political legitimacy, mass mobilization, and everyday moral life under socialism. My research moves between the laboratory bench, the archive, and the self-criticism session — reading scientific practice as a form of political and social history.</p>
-    <p>I completed my PhD at the University of Bristol under the supervision of Robert Bickers, with Rana Mitter serving as external examiner. I am currently based at Peking University, supervised by Zhang Li (张藜) as part of the Boya Postdoctoral Fellowship.</p>
+    <p class="lede">I am a historian of science, technology, and medicine in modern China. My work centers on the politics, memory, and emotional life of scientific practice under Maoism, using China's synthetic insulin project as a central case for thinking about how science, the state, and revolutionary subjectivity were made together.</p>
+    <p>I hold a PhD in History from the University of Bristol, where my dissertation on the synthetic insulin project won the British Association for Chinese Studies (BACS) Best Doctoral Thesis Award. I am currently a Boya Postdoctoral Fellow at Peking University, supervised by Zhang Li (张藜), and remain an Honorary Research Associate at Bristol.</p>
   </section>
 
-  <section id="research">
-    <h2>Research</h2>
+  <section id="education">
+    <h2>Education</h2>
     <div class="entry">
-      <div class="tag">Dissertation</div>
+      <div class="tag">2020–2024</div>
       <div>
-        <p class="title">China's Synthetic Insulin Project, 1958–1965</p>
-        <p class="meta">A history of the world's first total synthesis of a protein, read as a case study in scientific mobilization, international competition, and the politics of credit in the early PRC. Winner of the 2025 BACS Best Doctoral Thesis Prize.</p>
+        <p class="title">PhD in History, University of Bristol</p>
+        <p class="meta">Thesis: "Science and Politics in Maoist China: The Synthetic Insulin Project and Its Legacy." Winner, BACS Best Doctoral Thesis Award.</p>
       </div>
     </div>
     <div class="entry">
-      <div class="tag">In progress</div>
+      <div class="tag">2016–2019</div>
       <div>
-        <p class="title">The Moral Economy of Toil (辛劳的道德经济)</p>
-        <p class="meta">A new project tracing "辛苦" (toil, hardship) as a form of moral currency across commendation reports, self-criticism documents, and model-worker narratives in PRC political discourse.</p>
+        <p class="title">MA in Modern and Contemporary Chinese History, Nanjing University</p>
+        <p class="meta">Thesis: "The Establishment of the Management System of Scientific Societies in the PRC (1949–1958)."</p>
       </div>
     </div>
     <div class="entry">
-      <div class="tag">Working paper</div>
+      <div class="tag">2012–2016</div>
       <div>
-        <p class="title">Self-Criticism Documents as Sources for Cold War Knowledge Transfer</p>
-        <p class="meta">Centered on the marine biologists Zeng Chengkui (C. K. Tseng) and Zhang Xi at the CAS Institute of Oceanology.</p>
+        <p class="title">BA in History, Henan University</p>
+        <p class="meta"></p>
       </div>
     </div>
   </section>
@@ -166,52 +175,100 @@
   <section id="book">
     <h2>Book</h2>
     <div class="book">
-      <p class="title">China's Synthetic Insulin Project (working title)</p>
-      <p class="meta">Monograph under contract, Cambridge University Press. Based on the doctoral dissertation, winner of the 2025 BACS Best Doctoral Thesis Prize.</p>
+      <p class="title">Chairman Mao's Great Science: The Synthetic Insulin Project and Its Legacy</p>
+      <p class="meta">Book manuscript. Invited by Cambridge University Press for full-manuscript review; currently under review.</p>
     </div>
   </section>
 
   <section id="publications">
-    <h2>Selected Publications</h2>
+    <h2>Research and Publications</h2>
     <div class="entry">
       <div class="tag">Article</div>
       <div>
-        <p class="title">The Afterlife of a Protein</p>
-        <p class="meta">East Asian Science, Technology and Society (EASTS). On technoscientific achievements as unusually durable carriers of political meaning, extending the concept of boundary objects diachronically.</p>
+        <p class="title">Science, Politics, and the Making of Memory in China's Synthetic Insulin Project</p>
+        <p class="meta">East Asian Science, Technology and Society: An International Journal (11,000 words)</p>
+        <span class="status">Accepted</span>
       </div>
     </div>
     <div class="entry">
       <div class="tag">Article</div>
       <div>
-        <p class="title">Grand Corps Combat: Scientific Mobilization in China's Synthetic Insulin Project</p>
-        <p class="meta">On the 1960 mass-mobilization campaign ("大兵团作战") in the synthetic insulin project. Drawn from the dissertation.</p>
+        <p class="title">Mass Line in the Laboratory: The Grand Corps Combat in Mao Era Science</p>
+        <p class="meta">Submitted to Modern China (10,000 words)</p>
+        <span class="status">Under review</span>
       </div>
     </div>
     <div class="entry">
-      <div class="tag">Article</div>
+      <div class="tag">中文论文</div>
       <div>
-        <p class="title">"The Humble Are the Most Intelligent"</p>
-        <p class="meta">On the governance of scientific associations in the PRC. A parallel Chinese-language version is prepared for 《当代中国史研究》.</p>
+        <p class="title">Proxy, Direct and Mixture: The Evolution of the Management System for Scientific Associations in the People's Republic of China (1949–1984)</p>
+        <p class="meta">Submitted to Studies in Contemporary History (14,000 words)</p>
+        <span class="status">Under review</span>
       </div>
     </div>
     <div class="entry">
-      <div class="tag">中文文章</div>
+      <div class="tag">中文论文</div>
       <div>
-        <p class="title">重探中国人工合成胰岛素项目的源起</p>
-        <p class="meta">《当代中国史研究》。 English-language development of this material is planned for <em>History and Technology</em>.</p>
+        <p class="title">Revisiting the Origins of China's Synthetic Insulin Project</p>
+        <p class="meta">Submitted to Studies in Contemporary History (10,000 words)</p>
+        <span class="status">Under review</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">Book review</div>
+      <div>
+        <p class="title">The Party's Interests Come First: The Life of Xi Zhongxun, Father of Xi Jinping</p>
+        <p class="meta">Europe-Asia Studies</p>
+        <span class="status">Accepted</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">Working paper</div>
+      <div>
+        <p class="title">Zheng qi (争气, Striving Spirit): The Making of a Revolutionary Emotion</p>
+        <p class="meta">Prepared for The China Quarterly</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="tag">Team member</div>
+      <div>
+        <p class="title">National Social Science Fund of China Youth Project</p>
+        <p class="meta">"Archival Collection and Study of Modern China's Meteorological Stations" (2023– )</p>
       </div>
     </div>
   </section>
 
-  <section id="lineage">
-    <h2>Training</h2>
-    <p>PhD, University of Bristol. Supervisor: Robert Bickers; external examiner: Rana Mitter.</p>
-    <ul class="lineage">
-      <li><b>Robert Bickers</b> — SOAS PhD, 1992</li>
-      <li><b>T. H. Barrett</b></li>
-      <li><b>Stanley Weinstein</b></li>
-      <li><b>Masatoshi Nāgatomi</b></li>
+  <section id="talks">
+    <h2>Selected Talks</h2>
+    <ul class="plain">
+      <li><b>Jun 2026</b> — "Global Knowledge Transfer in Personnel Files: The Cases of C. K. Tseng and Zhang Xi at the Institute of Oceanology, CAS." Rivers, Lakes, and Seas: New Imaginaries in Water History Workshop, Ocean University of China.</li>
+      <li><b>Nov 2025</b> — "Emotions and Maoist Science." Oxford International History of East Asia Seminar, University of Oxford.</li>
+      <li><b>Sep 2025</b> — "Zheng qi (争气, striving spirit), The Making of a Revolutionary Emotion." BACS Annual Conference, Leicester.</li>
+      <li><b>Jun 2025</b> — "Needle and Revolution: The Promotion of Acupuncture Anaesthesia in Maoist China." AAS-in-Asia Conference, Kathmandu.</li>
+      <li><b>Jun 2024</b> — "Grand Corps Combat, a Maoist Scientific Research Method." BACS Joint Annual Conference.</li>
     </ul>
+  </section>
+
+  <section id="awards">
+    <h2>Grants and Awards</h2>
+    <div class="grid-2">
+      <div>
+        <ul class="plain">
+          <li><b>2025</b> — Best Doctoral Thesis Award, British Association for Chinese Studies</li>
+          <li><b>2023</b> — Research Culture Fund, Faculty of Arts, University of Bristol</li>
+          <li><b>2022</b> — The Universities' China Committee Grant</li>
+          <li><b>2021–2023</b> — Conference and Research Funding, Faculty of Arts, University of Bristol (four awards)</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="plain">
+          <li><b>2023</b> — Online Graduate Course: Sources and Methods in the History of the PRC, Yale University</li>
+          <li><b>2022–2023</b> — Visiting PhD Student, University of Chinese Academy of Sciences</li>
+          <li><b>2022</b> — Visiting PhD Student, City University of Hong Kong</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:20px; font-size:0.88rem; color:var(--ink-soft);">Postgraduate Member, Royal Historical Society · Member, British Association for Chinese Studies</p>
   </section>
 
   <section id="contact">
